@@ -1,0 +1,702 @@
+/* 兩頁共用 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans TC;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+hr {
+    border-width: 0.5px;
+}
+
+.mainColor {
+    color: #221E1F;
+}
+
+.subColor {
+    color: #56C4C5;
+}
+
+.mainRadius {
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000014;
+}
+
+.mainHover:hover {
+    cursor: pointer;
+    background-color: #26a3a5;
+}
+
+.subHover:hover {
+    cursor: pointer;
+    background-color: #e64438e2;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-none {
+    display: none;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.x-center {
+    justify-content: center;
+}
+
+.x-between {
+    justify-content: space-between;
+}
+
+.y-center {
+    align-items: center;
+}
+
+.xy-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+    z-index: -1;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    color: white;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.mx-center {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1120px;
+}
+
+.subContainer {
+    padding: 0 10% 100px 10%;
+}
+
+.navbar {
+    padding: 24px 10%;
+    justify-content: space-between;
+}
+
+.logo > img {
+    max-width: 218px;
+}
+
+.goToPricePage-red {
+    width: 128px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 22px;
+    background-color: #FF5D50;
+}
+
+.title {
+    font-size: 32px;
+    color: #221E1F;
+}
+
+.goToPricePage-green {
+    width: 136px;
+    height: 49px;
+    font-size: 18px;
+    border-radius: 27px;
+    background-color: #56C4C5;
+}
+
+.copyRight {
+    height: 56px;
+    font-size: 16px;
+    background: #F5F5F5;
+}
+
+.backToTop {
+    width: 71px;
+    height: 71px;
+    right: 3.5%;
+    bottom: 20px;
+    border-radius: 50%;
+    background-color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+/* index.html */
+
+.bg-yellow-lg {
+    width: 66%;
+    right: 0;
+}
+
+.banner {
+    padding: 30px 10% 217px 10%;
+}
+
+.indexTitle {
+    width: 51%;
+}
+
+.indexTitle-1 {
+    font-size: 18px;
+}
+
+.indexTitle-2 {
+    font-size: 44px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.indexTitle-3 {
+    font-size: 20px;
+}
+
+.person {
+    width: 49%;
+}
+
+.platformTitle {
+    padding-bottom: 48px;
+}
+
+.platform {
+    width: 33.3333%;
+}
+
+.platformIcon {
+    max-width: 90px;
+    width: 40%;
+}
+
+.platformName {
+    font-size: 24px;
+    padding: 24px 0;
+}
+
+.platformIntroduction {
+    font-size: 16px;
+    color: #747474;
+}
+
+.ball-lg {
+    width: 95px;
+    height: 340px;
+    top: -300px;
+    left: 0;
+    overflow: hidden;
+}
+
+.ball-lg > img {
+    width: 340px;
+    right: 0;
+}
+
+/* 錄影start */
+
+.roleSubTitle {
+    font-size: 20px;
+    padding: 16px 0 48px 0;
+}
+
+.role {
+    width: 24%;
+    padding-bottom: 24px;
+    background-color: white;
+}
+
+.roleIcon > img {
+    border-radius: 12px 12px 0 0;
+}
+
+.roleName {
+    font-size: 16px;
+    padding: 16px 0;
+}
+
+.roleIntroduction {
+    font-size: 16px;
+}
+
+/* 錄影end */
+
+.ball-md {
+    width: 170px;
+    height: 250px;
+    bottom: -30px;
+    right: 0;
+    overflow: hidden;
+}
+
+.ball-md > img {
+    width: 250px;
+}
+
+.serviceList {
+    width: 50%;
+}
+
+.service {
+    width: 46%;
+    margin-bottom: 28px;
+    padding: 32px 20px 48px 20px;
+}
+
+.serviceIcon {
+   width: 86px;
+   height: 86px;
+   border-radius: 50%;
+   box-shadow: 0px 2px 10px #00000014;
+}
+
+.serviceIcon > img {
+    width: 50px;
+}
+
+.serviceName {
+    font-size: 16px;
+    padding: 24px 0 16px 0;
+}
+
+.serviceIntroduction {
+    height: 72px;
+    font-size: 16px;
+}
+
+.serviceTitles {
+    width: 50%;
+    padding-left: 9%;
+}
+
+.serviceSubTitle {
+    font-size: 16px;
+    padding: 16px 0 24px 0;
+}
+
+.feedbackContainer {
+    padding: 0 9% 100px 9%;
+}
+
+.feedback {
+    margin: 96px 8px 16px 8px;
+    padding: 48px 30px 24px 30px;
+    background-color: white;
+}
+
+.personIcon > img {
+    width: 80px;
+    border-radius: 50%;
+    top: 48px;
+    z-index: 1;
+}
+
+.feedbackContent {
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+.companyName {
+    font-size: 16px;
+    padding: 24px 0 8px 0;
+}
+
+.personName {
+    font-size: 16px;
+}
+
+.stars img {
+    width: 20px;
+    padding: 0 4px;
+}
+
+.slick-dots li.slick-active button::before {
+    font-size: 18px;
+    color: #FFD153;
+}
+
+.ball-sm {
+    width: 130px;
+    height: 130px;
+    top: 43px;
+    left: 3%;
+}
+
+.footerContent {
+    height: 500px;
+}
+
+.footerContent > h1 {
+    font-size: 32px;
+    margin-top: 220px;
+    margin-bottom: 48px;
+}
+
+/* price.html */
+
+.bg-banner-lg {
+    width: 66%;
+    right: 0;
+}
+
+.priceTitle {
+    padding: 116px 10% 150px 10%;
+}
+
+.priceTitle-1 {
+    font-size: 44px;
+    padding-bottom: 16px;
+}
+
+.priceTitle-2 {
+    font-size: 16px;
+}
+
+* {
+    /* outline: 1px solid black; */
+}
+
+
+
+@media(max-width: 920px) {
+    /* 兩頁共用 */
+
+    .subContainer {
+        padding-bottom: 56px;
+    }
+
+    .navbar {
+        padding: 16px 5%;
+    }
+    
+    .logo {
+        width: 131px;
+    }
+    
+    .dividingLine {
+        height: 3px;
+        background-color: orange;
+        display: block;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .goToPricePage-green {
+        margin: 0 auto 32px auto;
+    }
+
+    .backToTop {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* index.html */
+
+    .bg-yellow-lg {
+        display: none;
+    }
+
+    .bg-yellow-sm {
+        max-width: 500px;
+        width: 90%;
+        bottom: 0;
+        right: 5%;
+        display: block;
+    }
+
+    .banner {
+        padding: 32px 5% 60px 5%;
+    }
+
+    .indexTitle, .person {
+        width: 100%;
+    }
+
+    .indexTitle-1, .indexTitle-3 {
+        font-size: 24px;
+    }
+
+    .indexTitle-2 {
+        font-size: 40px;
+    }
+
+    .person {
+        max-width: 500px;
+        margin-left: auto;
+    }
+
+    .platform {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+
+    .platformName {
+        font-size: 18px;
+        padding: 16px 0;
+    }
+
+    .ball-lg {
+        width: 90px;
+        height: 200px;
+        top: 20px;
+    }
+
+    .ball-lg > img {
+        width: 200px;
+    }
+
+    .roleSubTitle {
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+
+    .role {
+        width: 48%;
+        margin-bottom: 24px;
+    }
+
+    .ball-md {
+        width: 130px;
+        height: 200px;
+        bottom: 50px;
+    }
+
+    .ball-md > img {
+        width: 200px;
+    }
+
+    .serviceContainer {
+        flex-direction: column-reverse;
+    }
+
+    .serviceList, .serviceTitles {
+        width: 100%;
+    }
+
+    .serviceTitles {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .serviceName {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .feedbackContainer {
+        padding-bottom: 80px;
+    }
+
+    .ball-sm {
+        width: 150px;
+        height: 200px;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .ball-sm > img {
+        width: 200px;
+        right: 0;
+    }
+
+    /* price.html */
+
+    .bg-banner-lg {
+        width: 100%;
+    }
+
+    .priceTitle {
+        padding: 32px 5% 330px 5%;
+    }
+
+    .priceTitle-1 {
+        font-size: 40px;
+    }
+    
+    .priceTitle-2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 680px) {
+    /* index.html */
+    
+    .platform, .role, .service {
+        margin: 0 10% 24px 10%;
+    }
+
+    .platform, .role {
+        width: 100%;
+    }
+
+    .serviceList {
+        justify-content: center;
+    }
+
+    .service {
+        width: 75%;
+    }
+
+    .footerContent {
+        height: 440px;
+    }
+
+    .footer-lg {
+        display: none;
+    }
+
+    .footer-sm {
+        display: block;
+    }
+
+    .footerContent > h1 {
+        font-size: 24px;
+        margin: 273px 0 24px 0;
+    }
+
+    /* price.html */
+
+    .priceTitle {
+        padding-bottom: 420px;
+    }
+
+    .bg-banner-lg {
+        display: none;
+    }
+
+    .bg-banner-sm {
+        display: block;
+    }
+}
+
+@media(max-width: 420px) {
+    /* 兩頁共用 */
+    
+    .subContainer {
+        padding-bottom: 36px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .goToPricePage-red {
+        width: 115px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .backToTop {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    /* index.html */
+
+    .indexTitle-1, .indexTitle-3 {
+        font-size: 16px;
+    }
+
+    .indexTitle-2 {
+        font-size: 32px;
+    }
+
+    .platformTitle {
+        font-size: 28px;
+        padding-bottom: 32px;
+    }
+
+    .ball-lg {
+        width: 49px;
+        height: 126px;
+    }
+
+    .ball-lg > img {
+        width: 126px;
+    }
+
+    .ball-md {
+        width: 88px;
+        height: 135px;
+        bottom: 30px;
+    }
+
+    .ball-md > img {
+        width: 135px;
+    }
+
+    .feedbackContainer {
+        padding: 0 4% 60px 4%;
+    }
+
+    .ball-sm {
+        width: 77px;
+        height: 153px;
+    }
+
+    .ball-sm > img {
+        width: 153px;
+    }
+
+    /* price.html */
+
+    .priceTitle-1 {
+        font-size: 32px;
+    }
+    
+    .priceTitle-2 {
+        font-size: 16px;
+    }
+
+}
