@@ -453,7 +453,8 @@ hr {
     }
 
     .banner {
-        padding: 32px 5% 60px 5%;
+        margin-bottom: 60px;
+        padding: 32px 5% 10px 5%;
     }
 
     .indexTitle, .person {
