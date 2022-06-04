@@ -525,6 +525,34 @@ sub {
     right: 0;
 }
 
+.QATitle {
+    padding-bottom: 48px;
+}
+
+.QA {
+    padding: 16px 3.5% 24px 3.5%;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.question {
+    width: 100%;
+}
+
+.questionWord {
+    font-size: 18px;
+}
+
+.slideIcon {
+    width: 16px;
+}
+
+.answer {
+    font-size: 16px;
+    color: #747474;
+    padding-top: 24px;
+}
+
 * {
     /* outline: 1px solid black; */
 }
@@ -714,7 +742,6 @@ sub {
     .ball {
         top: 730px;
     }
-    
 }
 
 @media(max-width: 680px) {
@@ -797,6 +824,10 @@ sub {
 
     .peopleQuantity, .price {
         font-size: 26px;
+    }
+
+    .questionWord {
+        font-size: 16px;
     }
 }
 

@@ -43,13 +43,13 @@
 
     <div class="container mx-center">
         <div id="planPrice" class="pricePageContainer mx-center p-relative">
-            <h5 class="planTitle title t-center">彈性選擇，提供您選擇最適合的方案</h5>
+            <h5 class="planTitle title t-center mainColor">彈性選擇，提供您選擇最適合的方案</h5>
             <ul class="planBtnList flex-row wrap">
-                <li><button type="button" class="planBtn planBtn-active" onclick="changePlan(1);">10000位</button></li>
-                <li><button type="button" class="planBtn" onclick="changePlan(2);">15000位</button></li>
-                <li><button type="button" class="planBtn" onclick="changePlan(3);">20000位</button></li>
-                <li><button type="button" class="planBtn" onclick="changePlan(4);">25000位</button></li>
-                <li><button type="button" class="planBtn" onclick="changePlan(5);">>25000位</button></li>
+                <li><button type="button" class="planBtn planBtn-active" onclick="changePlan(this);">10000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(this);">15000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(this);">20000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(this);">25000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(this);">>25000位</button></li>
             </ul>
             <ul class="planModeList flex-row wrap x-between">
                 <li class="planMode mainRadius">
@@ -139,7 +139,33 @@
 
     <div class="container mx-center">
         <div class="pricePageContainer mx-center p-relative">
-            <!-- QA -->
+            <h5 class="QATitle title t-center mainColor">常見問題</h5>
+            <ul class="QAList">
+                <li class="QA mainRadius" onclick="slideToggle(this);">
+                    <div class="question flex-row x-between y-center">
+                        <p class="questionWord mainColor">我要怎麼變更方案？</p>
+                        <img src="images/icon_plus.svg" alt="plus" class="slideIcon">
+                        <img src="images/icon_minus.svg" alt="minus" class="slideIcon d-none">
+                    </div>
+                    <p class="answer mainColor d-none">請聯絡您的業務專員修改訂閱方案，我們將為您進行變更流程。</p>
+                </li>
+                <li class="QA mainRadius" onclick="slideToggle(this);">
+                    <div class="question flex-row x-between y-center">
+                        <p class="questionWord mainColor">如果我沒有LINE官方帳號怎麼辦？</p>
+                        <img src="images/icon_plus.svg" alt="plus" class="slideIcon">
+                        <img src="images/icon_minus.svg" alt="minus" class="slideIcon d-none">
+                    </div>
+                    <p class="answer mainColor d-none">沒關係的，只要您是我們任何一個方案的夥伴，我們的專員可以協助辦理哦！</p>
+                </li>
+                <li class="QA mainRadius" onclick="slideToggle(this);">
+                    <div class="question flex-row x-between y-center">
+                        <p class="questionWord mainColor">非上班日有客服支援嗎？</p>
+                        <img src="images/icon_plus.svg" alt="plus" class="slideIcon">
+                        <img src="images/icon_minus.svg" alt="minus" class="slideIcon d-none">
+                    </div>
+                    <p class="answer mainColor d-none">當然哦！我們錢都收了，不會拋棄你的！<br />請您直接來我們公司，我們假日也都在辦公室。</p>
+                </li>
+            </ul>
         </div>
     </div>
 
