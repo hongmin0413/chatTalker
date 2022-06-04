@@ -107,10 +107,6 @@ hr {
     max-width: 1120px;
 }
 
-.subContainer {
-    padding: 0 10% 100px 10%;
-}
-
 .navbar {
     padding: 24px 10%;
     justify-content: space-between;
@@ -199,6 +195,10 @@ hr {
 
 .person {
     width: 49%;
+}
+
+.indexContainer {
+    padding: 0 10% 100px 10%;
 }
 
 .platformTitle {
@@ -382,8 +382,19 @@ hr {
 /* price.html */
 
 .bg-banner-lg {
-    width: 66%;
+    width: 65%;
     right: 0;
+}
+
+.bg-blue {
+    width: 100%;
+    background-color: #F7F9FD;
+    z-index: -2;
+}
+
+.bg-blue-lg {
+    height: 450px;
+    border-radius: 0 0 0 300px;
 }
 
 .priceTitle {
@@ -399,8 +410,42 @@ hr {
     font-size: 16px;
 }
 
+.pricePageContainer {
+    padding: 0 15% 100px 15%;
+}
+
+.planTitle {
+    padding: 11px 0 48px 0;
+}
+
+.peopleBtnList {
+    padding: 0 5% 64px 5%;
+    justify-content: space-around
+}
+
+.peopleBtnList li {
+    width: 18%;
+}
+
+.peopleBtn {
+    width: 100%;
+    height: 50px;
+    max-width: 130px;
+    font-size: 18px;
+    border-radius: 27px;
+    border: 2px solid #56C4C5;
+    color: #56C4C5;
+    background-color: white;
+}
+
+.peopleBtn:hover, .peopleBtn:focus {
+    cursor: pointer;
+    color: white;
+    background-color: #56C4C5;
+}
+
 * {
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 
@@ -420,10 +465,6 @@ hr {
 
 @media(max-width: 920px) {
     /* 兩頁共用 */
-
-    .subContainer {
-        padding-bottom: 56px;
-    }
 
     .navbar {
         padding: 16px 5%;
@@ -480,6 +521,10 @@ hr {
     .person {
         max-width: 500px;
         margin-left: auto;
+    }
+
+    .indexContainer {
+        padding-bottom: 56px;
     }
 
     .platform {
@@ -574,6 +619,15 @@ hr {
         font-size: 24px;
     }
 
+    .peopleBtnList {
+        padding: 0 0 24px 0;
+    }
+
+    .peopleBtnList li {
+        width: 30%;
+        margin-bottom: 24px;
+    }
+
     .ball {
         width: 94px;
         height: 350px;
@@ -635,21 +689,26 @@ hr {
         padding-bottom: 420px;
     }
 
-    .bg-banner-lg {
+    .bg-banner-lg, .bg-blue-lg {
         display: none;
     }
 
-    .bg-banner-sm {
+    .bg-banner-sm,.bg-blue-sm {
         display: block;
+    }
+
+    .bg-blue-sm {
+        height: 495px;
+        border-radius: 0 0 0 200px;
+    }
+
+    .pricePageContainer {
+        padding: 0 5% 56px 5%;
     }
 }
 
 @media(max-width: 420px) {
     /* 兩頁共用 */
-    
-    .subContainer {
-        padding-bottom: 36px;
-    }
 
     .logo {
         width: 120px;
@@ -677,6 +736,10 @@ hr {
 
     .indexTitle-2 {
         font-size: 32px;
+    }
+
+    .indexContainer {
+        padding-bottom: 36px;
     }
 
     .platformTitle {
@@ -724,6 +787,10 @@ hr {
     
     .priceTitle-2 {
         font-size: 16px;
+    }
+
+    .pricePageContainer {
+        padding-bottom: 36px;
     }
 
     .ball {
