@@ -20,20 +20,19 @@
     <div class="container mx-center">
         <header class="header">
             <div class="bg p-relative">
-                <img src="images/banner.svg"
-                    alt="bg-banner" class="bg-banner-lg p-absolute">
+                <img src="images/banner.svg" alt="bg-banner" class="bg-banner-lg p-absolute">
+                <div class="bg-blue-lg bg-blue p-absolute"></div>
             </div>
             <nav class="navbar flex-row x-between">
                 <a href="index.html" class="logo flex-row y-center">
-                    <img src="images/logo.png" alt="logo"
-                        title="chatTalker">
+                    <img src="images/logo.png" alt="logo" title="chatTalker">
                 </a>
-                <a href="#plan" class="goToPricePage-red btn subHover">方案費用</a>
+                <a href="#planPrice" class="btn-red btn subHover">方案費用</a>
             </nav>
             <div class="dividingLine d-none"></div>
             <div class="bg p-relative">
-                <img src="images/banner_sm.svg"
-                    alt="bg-banner" class="bg-banner-sm p-absolute d-none">
+                <img src="images/banner_sm.svg" alt="bg-banner" class="bg-banner-sm p-absolute d-none">
+                <div class="bg-blue-sm bg-blue p-absolute d-none"></div>
             </div>
             <div class="priceTitle flex-column x-center">
                 <h1 class="priceTitle-1 mainColor">計費方式說明</h1>
@@ -43,18 +42,103 @@
     </div>
 
     <div class="container mx-center">
-        <div id="plan" class="subContainer mx-center p-relative">
-            <!-- plan -->
-            
-            <!-- <div class="ball p-absolute">
-                <img src="images/ball03.svg" alt="ball"
-                    class=" p-absolute">
-            </div> -->
+        <div id="planPrice" class="pricePageContainer mx-center p-relative">
+            <h5 class="planTitle title t-center">彈性選擇，提供您選擇最適合的方案</h5>
+            <ul class="planBtnList flex-row wrap">
+                <li><button type="button" class="planBtn planBtn-active" onclick="changePlan(1);">10000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(2);">15000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(3);">20000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(4);">25000位</button></li>
+                <li><button type="button" class="planBtn" onclick="changePlan(5);">>25000位</button></li>
+            </ul>
+            <ul class="planModeList flex-row wrap x-between">
+                <li class="planMode mainRadius">
+                    <h6 class="planModeTitle t-center mainColor">基本版</h6>
+                    <hr>
+                    <p class="planModeIntroduction t-center mainColor">
+                        提供中小企業最必要的功能<br />完整建立分眾以達到精準的行銷自動化
+                    </p>
+                    <div class="planInfo">
+                        <div class="planInfoHeader flex-row">
+                            <div class="planResult">
+                                <p class="planResultTitle t-center mainColor">訂閱用戶數</p>
+                                <p class="peopleQuantity t-center subColor">10000<sub>位</sub></p>
+                            </div>
+                            <span class="equal flex-row y-center">=</span>
+                            <div class="planResult">
+                                <p class="planResultTitle t-center mainColor">試算每月的費用</p>
+                                <p class="price t-center mainColor">600<sub>TWD</sub></p>
+                            </div>
+                        </div>
+                        <ul class="featureList">
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">支援 Messenger / Instagram 或 LINE 渠道</div>
+                            </li>
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">10 個進階套件</div>
+                            </li>
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">可設定 50 種分眾標籤</div>
+                            </li>
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">客服人機轉接</div>
+                            </li>
+                        </ul>
+                        <div class="flex-row x-center"><a href="#" class="btn-green btn mainHover">立即體驗</a></div>
+                    </div>
+                </li>
+                <li class="planMode mainRadius">
+                    <h6 class="planModeTitle t-center mainColor">標準版</h6>
+                    <hr>
+                    <p class="planModeIntroduction t-center mainColor">
+                        建立企業流量池，全通路數據整合與交換<br />高可靠性服務
+                    </p>
+                    <div class="planInfo">
+                        <div class="planInfoHeader flex-row">
+                            <div class="planResult">
+                                <p class="planResultTitle t-center mainColor">訂閱用戶數</p>
+                                <p class="peopleQuantity t-center subColor">10000<sub>位</sub></p>
+                            </div>
+                            <span class="equal flex-row y-center">=</span>
+                            <div class="planResult">
+                                <p class="planResultTitle t-center mainColor">試算每月的費用</p>
+                                <p class="price t-center mainColor">1600<sub>TWD</sub></p>
+                            </div>
+                        </div>
+                        <ul class="featureList">
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">支援多個 Messenger、Instagram 和 LINE 渠道</div>
+                            </li>
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">20 個進階及行銷互動套件</div>
+                            </li>
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">可設定 500 種分眾標籤</div>
+                            </li>
+                            <li class="feature flex-row">
+                                <img src="images/icon_check.svg" alt="check" class="check">
+                                <div class="featureWord mainColor">客服人機轉接＋自動指派專員處理</div>
+                            </li>
+                        </ul>
+                        <div class="flex-row x-center"><a href="#" class="btn-green btn mainHover">立即體驗</a></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="ball p-absolute">
+                <img src="images/ball03.svg" alt="ball" class=" p-absolute">
+            </div>
         </div>
     </div>
 
     <div class="container mx-center">
-        <div class="subContainer mx-center p-relative">
+        <div class="pricePageContainer mx-center p-relative">
             <!-- QA -->
         </div>
     </div>
