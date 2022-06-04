@@ -26,6 +26,7 @@ ul, li {
 
 hr {
     border-width: 0.5px;
+    color: #ddd;
 }
 
 .mainColor {
@@ -94,10 +95,6 @@ hr {
     z-index: -1;
 }
 
-.p-fixed {
-    position: fixed;
-}
-
 .t-center {
     text-align: center;
 }
@@ -161,6 +158,7 @@ hr {
 .backToTop {
     width: 71px;
     height: 71px;
+    position: fixed;
     right: 3.5%;
     bottom: 20px;
     border-radius: 50%;
@@ -306,7 +304,6 @@ hr {
 }
 
 .serviceIntroduction {
-    height: 72px;
     font-size: 16px;
 }
 
@@ -351,20 +348,24 @@ hr {
     font-size: 16px;
 }
 
+.stars {
+    margin: 0 -4px;
+}
+
 .stars img {
-    width: 20px;
+    width: 23px;
     padding: 0 4px;
 }
 
 .slick-dots li.slick-active button::before {
-    font-size: 18px;
     color: #FFD153;
+    font-size: 20px;
 }
 
 .ball-sm {
     width: 130px;
     height: 130px;
-    top: 43px;
+    top: 55px;
     left: 3%;
 }
 
@@ -372,7 +373,7 @@ hr {
     height: 500px;
 }
 
-.footerContent > h1 {
+.footerContent > h4 {
     font-size: 32px;
     margin-top: 220px;
     margin-bottom: 48px;
@@ -430,12 +431,6 @@ hr {
     
     .logo {
         width: 131px;
-    }
-    
-    .dividingLine {
-        height: 3px;
-        background-color: orange;
-        display: block;
     }
 
     .title {
@@ -591,6 +586,14 @@ hr {
 }
 
 @media(max-width: 680px) {
+    /* 兩頁共用 */
+
+    .dividingLine {
+        height: 3px;
+        background-color: orange;
+        display: block;
+    }
+
     /* index.html */
     
     .platform, .role, .service {
@@ -621,7 +624,7 @@ hr {
         display: block;
     }
 
-    .footerContent > h1 {
+    .footerContent > h4 {
         font-size: 24px;
         margin: 273px 0 24px 0;
     }
