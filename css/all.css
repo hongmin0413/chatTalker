@@ -763,21 +763,24 @@ sub {
 
     /* price.html */
 
-    .priceTitle {
-        padding-bottom: 420px;
-    }
-
     .bg-banner-lg, .bg-blue-lg {
         display: none;
     }
 
     .bg-banner-sm,.bg-blue-sm {
+        height: 495px;
         display: block;
+    }
+    .bg-banner-sm {
+        object-fit: cover;
     }
 
     .bg-blue-sm {
-        height: 495px;
         border-radius: 0 0 0 200px;
+    }
+
+    .priceTitle {
+        padding-bottom: 400px;
     }
 
     .pricePageContainer {
