@@ -471,8 +471,12 @@ hr {
     border-radius: 12px;
 }
 
-.planResultTitle, sub {
-    font-size: 12px;
+.planResultTitle {
+    font-size: 14px;
+}
+
+.planResultTitle {
+    padding-bottom: 8px;
 }
 
 .peopleQuantity, .price {
@@ -481,6 +485,7 @@ hr {
 }
 
 sub {
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -779,8 +784,16 @@ sub {
         padding: 0 5% 56px 5%;
     }
 
+    .planResult {
+        padding: 16px 3%;
+    }
+
+    .planResultTitle {
+        font-size: 12px;
+    }
+
     .peopleQuantity, .price {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
