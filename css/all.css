@@ -753,6 +753,10 @@ sub {
     .platform, .role {
         width: 100%;
     }
+    
+    .platformIcon {
+        width: 25%;
+    }
 
     .serviceList {
         justify-content: center;
