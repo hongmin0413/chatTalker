@@ -109,7 +109,6 @@ hr {
 
 .navbar {
     padding: 24px 10%;
-    justify-content: space-between;
 }
 
 .logo > img {
@@ -185,8 +184,7 @@ hr {
 
 .indexTitle-2 {
     font-size: 44px;
-    padding-top: 8px;
-    padding-bottom: 16px;
+    padding: 8px 0 16px 0;
 }
 
 .indexTitle-3 {
@@ -237,8 +235,6 @@ hr {
     right: 0;
 }
 
-/* 錄影start */
-
 .roleSubTitle {
     font-size: 20px;
     padding: 16px 0 48px 0;
@@ -248,10 +244,7 @@ hr {
     width: 24%;
     padding-bottom: 24px;
     background-color: white;
-}
-
-.roleIcon > img {
-    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 
 .roleName {
@@ -262,8 +255,6 @@ hr {
 .roleIntroduction {
     font-size: 16px;
 }
-
-/* 錄影end */
 
 .ball-md {
     width: 170px;
@@ -375,8 +366,7 @@ hr {
 
 .footerContent > h4 {
     font-size: 32px;
-    margin-top: 220px;
-    margin-bottom: 48px;
+    margin: 220px 0 48px 0;
 }
 
 /* price.html */
@@ -420,7 +410,7 @@ hr {
 
 .planBtnList {
     padding: 0 5% 64px 5%;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .planBtnList li {
@@ -462,7 +452,7 @@ hr {
 }
 
 .planInfo {
-    padding: 32px 4.5% 32px 4.5%;
+    padding: 32px 4.5%;
 }
 
 .planResult {
@@ -558,11 +548,7 @@ sub {
     /* 兩頁共用 */
 
     .navbar {
-        padding: 16px 5%;
-    }
-    
-    .logo {
-        width: 131px;
+        padding: 24px 5%;
     }
 
     .title {
@@ -743,6 +729,14 @@ sub {
 
 @media(max-width: 680px) {
     /* 兩頁共用 */
+
+    .navbar {
+        padding: 16px 5%;
+    }
+    
+    .logo {
+        width: 131px;
+    }
 
     .dividingLine {
         height: 3px;
